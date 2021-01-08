@@ -1,5 +1,9 @@
 <template>
-    <post-list :posts="posts"/>
+    <div class="post-list-page">
+        <h1>포스트 게시글</h1>
+        <post-list :posts="posts"/>
+        <router-link :to="{ name: 'PostCreatePage'}">글쓰기</router-link>
+    </div>
 </template>
 
 <script>

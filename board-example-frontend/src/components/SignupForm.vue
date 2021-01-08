@@ -32,7 +32,7 @@ export default{
                 return
             }
 
-            this.$emit('onSubmit', {name, email, password});
+            this.$emit('submit', {name, email, password});
         }
     }
 }
